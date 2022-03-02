@@ -1,7 +1,7 @@
 <?php 
 
 session_start();
-include_once "./connections/travelclass.php";
+include_once "./connections/travelclass.html";
 $con = $lib->openConnection();
 
 
@@ -107,14 +107,14 @@ $con = $lib->openConnection();
                     // header("Location: ./home.php");
                     ?>
                     <script>
-                        window.location.href = "./home.php";
+                        window.location.href = "./home.html";
                     </script>
 
                     <?php
                 }else{
                     ?>
                     <script>
-                        window.location.href = "./school_id_err.php?status=not_found";
+                        window.location.href = "./school_id_err.html?status=not_found";
                     </script>
                     <?php
                 }
